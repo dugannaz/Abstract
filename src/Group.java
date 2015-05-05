@@ -55,10 +55,7 @@ public abstract class Group extends Monoid {
 		
 		if (!isMonoid()) return false;
 		
-		if (!isCommutative()) {
-			System.out.println("Addition is not commutative! (Not Group)");
-			return false;
-		}
+		isCommutative();
 		
 		if (!isThereInverse()) {
 			System.out.println("Addition has no inverse element! (Not Group)");
@@ -66,6 +63,7 @@ public abstract class Group extends Monoid {
 		}
 		
 		group = true;
+		System.out.println("Group? : Yes (Abellian:" + commutative + ")");
 		return true;
 	}
 }

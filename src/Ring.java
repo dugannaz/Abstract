@@ -41,6 +41,7 @@ public abstract class Ring extends Group {
 	 */
 	public boolean isMultMonoid() {
 		
+		System.out.println("Does multiplication operation define monoid?");
 		boolean result = multMonoid.isMonoid();
 		multiplicationMonoid = result;
 		return result;
@@ -75,8 +76,13 @@ public boolean isDistributive() {
 		
 		if (!isGroup()) return false;
 		
-		if (getIdentity() != 0) {
-			System.out.println("Identity is non zero! (" + getIdentity() + ") (Not Ring)");
+		if (!commutative) {
+			System.out.println("Addition is not commutative! (Not Abbelian Group)");
+			return false;
+		}
+		
+		if (getIdentity() != zero) {
+			System.out.println("Identity is non zero! (" + getIdentity() + "!= " + zero + ") (Not Ring)");
 			identityZero = false;
 			return false;
 		}
@@ -94,6 +100,7 @@ public boolean isDistributive() {
 		}
 		
 		ring = true;
+		System.out.println("Ring? : Yes");
 		return true;
 	}
 	

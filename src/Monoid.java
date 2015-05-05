@@ -100,6 +100,7 @@ public abstract class Monoid extends Set {
 		}
 		
 		monoid = true;
+		System.out.println("Monoid? : Yes");
 		return true;
 	}
 }

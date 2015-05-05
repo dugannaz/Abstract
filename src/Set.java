@@ -27,7 +27,7 @@ public abstract class Set {
 	public boolean isElement(int e1) {
 		int n1 = getCardinal(e1);
 
-		if (n1>limitLow-1)
+		if (n1>limitLow-1 && n1<limitHigh)
 			return true;
 		else
 			return false;
