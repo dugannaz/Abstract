@@ -90,7 +90,7 @@ public abstract class Monoid extends Set {
 		
 		int e = getIdentity();
 		if (e==NaN) {
-			System.out.println("Addition identity non-zero! (Not Monoid)");
+			System.out.println("No addition identity! (Not Monoid)");
 			return false;
 		}
 		
