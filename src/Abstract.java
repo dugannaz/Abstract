@@ -30,25 +30,4 @@ public class Abstract {
 			System.out.println(irr[0][i] + " " + irr[3][i]); 
 		
 		
-		// print differences
-		/*if (true) {
-		  int x=5;
-		  for (int i=0; i<25; i++)
-			  System.out.println(i + " " + (irr[i+1][x*(i+2)] - irr[i][x*(i+2)]) + " " + irr[i][x*(i+2)] + " " + irr[i+1][x*(i+2)]); 
-		}*/
-		
-	}
-	
-	/*static double[] divide(int[] a, int[] b) {
-		
-		if (a.length != b.length) return null;
-		
-		double[] c = new double[a.length];
-		
-		for (int i=0; i<a.length; i++)
-			c[i] = (double)a[i]/(double)b[i];
-		
-		return c;
-	}*/
-
 }
