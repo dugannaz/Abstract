@@ -4,12 +4,16 @@ public class Hilbert extends Ring{
 	int n;
 	int s;
 	
+	/* Constructor with lower limit 0, higher limit 1000
+	 */
 	public Hilbert(int n, int s) {
 		this.n = n;
 		this.s = s;
 		limitLow = 0;
 	}
 	
+	/* Constructor with lower and higher limit parameters
+	 */
 	public Hilbert(int n, int s, int ll, int lh) {
 		this.n = n;
 		this.s = s;

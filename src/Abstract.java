@@ -11,7 +11,7 @@ public class Abstract {
 			h[i] = new Hilbert(i+1, 1);
 			h[i].findZero();
 			irr[i] = h[i].getIrreducibleElements(maxN);
-			//irr[i] = h[i].getIrreducibles(maxN);
+
 		}
 		
 		// check category of Hilbert numbers
@@ -30,4 +30,5 @@ public class Abstract {
 			System.out.println(irr[0][i] + " " + irr[3][i]); 
 		
 		
+	}
 }

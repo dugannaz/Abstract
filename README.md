@@ -1,6 +1,6 @@
 # Abstract - Abstract Algebra Java Library
 
-Abstract algebra objects (set, monoid, group, ring) as hierarcical Java classes. 
+Abstract algebra objects (set, monoid, group, ring) as hierarchical Java classes. 
 
 Set element mapping rule and operations are defined in a class which extends Ring class. Category of the defined object can be checked with isRing method.
 
