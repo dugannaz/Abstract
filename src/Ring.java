@@ -43,6 +43,10 @@ public abstract class Ring extends Group {
 		
 		System.out.println("Does multiplication operation define monoid?");
 		boolean result = multMonoid.isMonoid();
+		if (result)
+			System.out.println("Yes");
+		else
+			System.out.println("No");
 		multiplicationMonoid = result;
 		return result;
 	}
