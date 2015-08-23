@@ -41,12 +41,14 @@ public abstract class Ring extends Group {
 	 */
 	public boolean isMultMonoid() {
 		
+		System.out.println("--------------------------------------------");
 		System.out.println("Does multiplication operation define monoid?");
 		boolean result = multMonoid.isMonoid();
 		if (result)
 			System.out.println("Yes");
 		else
 			System.out.println("No");
+		System.out.println("--------------------------------------------");
 		multiplicationMonoid = result;
 		return result;
 	}
